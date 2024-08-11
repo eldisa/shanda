@@ -1,0 +1,66 @@
+<style>
+    .container {
+    font-size: 14px;
+}
+
+.container .header {
+    font-size: 18px;
+}
+
+.container .shop-list {
+    list-style: none;
+    margin-left: -15px;
+}
+
+.container .shop-list li.item {
+    color: green;
+}
+
+.container .shop-list .item {
+    /* 
+    Q:Explain why does this color not works, and how to fix make it work on1st list 
+    A: 根據 CSS Specificity 的比較，由於與 .container .shop-list li.item 的選擇到的element 相同，且優先級大於 .container .shop-list .item，所以 color 會是綠色
+    */
+    color: blue;
+}
+
+/* Write styling make every other line give background color to next one */
+/*
+sol. 1. 直接修改
+.container .shop-list li.item {
+    color: blue;
+}
+
+sol. 2. 新增 class 或是 id，使 CSS Specificity 分別出來
+.container .shop-list .item.blue {
+    color: blue;
+}
+
+sol. 3. 使用 important 強制覆蓋，但是可能會影響到其他的，且可能導致其他維護問題，僅在必要時使用
+.container .shop-list .item {
+    color: blue !important;
+}
+*/
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">5/8 外出確認表</div>
+        <div class="content">
+        <ol class="shop-list">
+        <li class="item">麵包</li>
+        <li class="item">短袖衣服</li>
+        <li class="item">飲用水</li>
+        <li class="item">帳篷</li>
+        </ol>
+        <ul class="shop-list">
+        <li class="item">暈車藥</li>
+        <li class="item">感冒藥</li>
+        <li class="item">丹木斯</li>
+        <li class="item">咳嗽糖漿</li>
+        </ul>
+        </div>
+        <div class="footer">以上僅共參考</div>
+        </div>
+        
+</body>
