@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shanda 面試作業
 
-## Getting Started
+這是為 Shanda 公司面試準備的作業，分為兩部分：`test1` 和 `test2`。每部分對應到專案中的 `test1` 和 `test2` 資料夾。
 
-First, run the development server:
+## 目錄
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Shanda 面試作業](#shanda-面試作業)
+  - [目錄](#目錄)
+  - [Test1](#test1)
+  - [Test2 - Component 開發](#test2---component-開發)
+    - [安裝與執行](#安裝與執行)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Test1
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+`test1` 資料夾包含了 6 題簡單的問題與 debug 任務。每一題的問題與答案分別存放在 `q1` 到 `q6` 的子資料夾中。這些資料夾包含相關的 JavaScript 或 HTML 文件。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **q1**: 問題與答案檔案
+- **q2**: 問題與答案檔案
+- **q3**: 問題與答案檔案
+- **q4**: 問題與答案檔案
+- **q5**: 問題與答案檔案
+- **q6**: 問題與答案檔案
 
-## Learn More
+請參考各資料夾中的文件以查看每題的具體解答。
 
-To learn more about Next.js, take a look at the following resources:
+## Test2 - Component 開發
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`test2` 資料夾包含了一個使用 Next.js 開發的元件。此部分說明如何安裝所需的依賴並運行專案。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 安裝與執行
 
-## Deploy on Vercel
+1. 確保您已安裝 [Node.js](https://nodejs.org/)（版本 16 或更高）。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. 克隆或下載此專案到您的本地環境：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```bash
+    git clone https://github.com/eldisa/shanda.git
+    cd shanda/test2
+    ```
+3. 安裝依賴：
+    ```bash
+    npm install
+    ```
+
+4. 運行開發伺服器：
+    ```bash
+    npm run dev
+    ```
+
+5. 開啟瀏覽器並訪問 http://localhost:3000 來查看元件。
